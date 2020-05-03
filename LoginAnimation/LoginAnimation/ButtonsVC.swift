@@ -16,7 +16,7 @@ class ButtonsVC: UIViewController {
         super.viewDidLoad()
         circleView.layer.borderWidth = 2
         circleView.layer.borderColor = UIColor.red.cgColor
-        circleView.backgroundColor = .clear
+        circleView.backgroundColor = .red
         circleView.layer.cornerRadius = 30
     }
     

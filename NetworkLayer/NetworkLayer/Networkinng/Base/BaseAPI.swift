@@ -18,30 +18,37 @@ class BaseAPI<T: TargetType> {
         AF.request(target.baseURL + target.path, method: method, parameters: params.0, encoding: params.1, headers: headers).responseJSON { (response) in
             guard let statusCode = response.response?.statusCode else {
                 // ADD Custom Error
-                completion(.failure(NSError()))
+                let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.genericError])
+                completion(.failure(error))
                 return
             }
-            if statusCode == 200 {
+            if statusCode == 200 { // 200 reflect success response
                 // Successful request
                 guard let jsonResponse = try? response.result.get() else {
                     // ADD Custom Error
-                    completion(.failure(NSError()))
+                    let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.genericError])
+                    completion(.failure(error))
                     return
                 }
                 guard let theJSONData = try? JSONSerialization.data(withJSONObject: jsonResponse, options: []) else {
                     // ADD Custom Error
-                    completion(.failure(NSError()))
+                    let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.genericError])
+                    completion(.failure(error))
                     return
                 }
                 guard let responseObj = try? JSONDecoder().decode(M.self, from: theJSONData) else {
                     // ADD Custom Error
-                    completion(.failure(NSError()))
+                    let error = NSError(domain: target.baseURL, code: 0, userInfo: [NSLocalizedDescriptionKey: ErrorMessage.genericError])
+                    completion(.failure(error))
                     return
                 }
                 completion(.success(responseObj))
             } else {
                 // ADD custom error base on status code 404 / 401 /
-                completion(.failure(NSError()))
+                // Error Parsing for the error message from the BE
+                let message = "Error Message Parsed From BE"
+                let error = NSError(domain: target.baseURL, code: statusCode, userInfo: [NSLocalizedDescriptionKey: message])
+                completion(.failure(error))
             }
         }
     }

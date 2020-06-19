@@ -25,7 +25,7 @@ extension UsersNetworking: TargetType {
     var path: String {
         switch self {
         case .getUsers:
-            return "/users"
+            return "/asfd/safd/sdf/sfd/asdf"
         case .createUser:
             return "/users"
         }

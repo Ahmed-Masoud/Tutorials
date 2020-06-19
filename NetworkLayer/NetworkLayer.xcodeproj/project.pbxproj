@@ -20,6 +20,7 @@
 		EA86E91B24317092000D78A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA86E91924317092000D78A5 /* Main.storyboard */; };
 		EA86E91D24317093000D78A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA86E91C24317093000D78A5 /* Assets.xcassets */; };
 		EA86E92024317093000D78A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA86E91E24317093000D78A5 /* LaunchScreen.storyboard */; };
+		EA8B6BCF249C76D90089D530 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8B6BCE249C76D90089D530 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		EA86E91C24317093000D78A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA86E91F24317093000D78A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA86E92124317093000D78A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8B6BCE249C76D90089D530 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				EA86E91C24317093000D78A5 /* Assets.xcassets */,
 				EA86E91E24317093000D78A5 /* LaunchScreen.storyboard */,
 				EA86E92124317093000D78A5 /* Info.plist */,
+				EA8B6BCE249C76D90089D530 /* Constants.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				EA86E91424317092000D78A5 /* AppDelegate.swift in Sources */,
 				EA86E91624317092000D78A5 /* SceneDelegate.swift in Sources */,
 				EA4D08BA2475E77000EC30A9 /* BaseAPI.swift in Sources */,
+				EA8B6BCF249C76D90089D530 /* Constants.swift in Sources */,
 				EA4D08BD2475EB3000EC30A9 /* UsersNetworking.swift in Sources */,
 				EA4D08BF2475EDDC00EC30A9 /* UsersAPI.swift in Sources */,
 				EA4D08C42475EE8600EC30A9 /* UserModel.swift in Sources */,

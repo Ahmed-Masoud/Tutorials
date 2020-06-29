@@ -1,17 +1,20 @@
 //
-//  UsersResponse.swift
+//  BaseResponse.swift
 //  NetworkLayer
 //
-//  Created by Ahmed masoud on 5/21/20.
+//  Created by Ahmed masoud on 6/29/20.
 //  Copyright © 2020 Ahmed Masoud. All rights reserved.
 //
 
 import Foundation
 
-class UsersResponse: Codable {
-    var data: [UserModel]?
+
+class BaseResponse<T: Codable>: Codable {
+    var status: String?
+    var data: T?
     
     enum CodingKeys: String, CodingKey {
+        case status = "status"
         case data = "data"
     }
 }

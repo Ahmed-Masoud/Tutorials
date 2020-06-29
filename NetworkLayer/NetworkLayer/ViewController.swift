@@ -18,10 +18,10 @@ class ViewController: UIViewController {
             case .success(let response):
                 let users = response?.data
                 for user in users ?? [] {
-                    print("\(user.firstName) \(user.lastName)")
+                    print("\(user.name ?? "") => \(user.salary ?? "")")
                 }
             case .failure(let error):
-                print(error.userInfo[NSLocalizedDescriptionKey] as? String)
+                print(error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
             }
         }
     }

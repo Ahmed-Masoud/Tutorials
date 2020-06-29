@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		37CDFCC13BA31D92A9AB1F51 /* Pods_NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866BF3BC846969D80939B1E4 /* Pods_NetworkLayer.framework */; };
+		EA39514024A9BCD1008AC044 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA39513F24A9BCD1008AC044 /* BaseResponse.swift */; };
 		EA4D08B82475E63E00EC30A9 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08B72475E63E00EC30A9 /* TargetType.swift */; };
 		EA4D08BA2475E77000EC30A9 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08B92475E77000EC30A9 /* BaseAPI.swift */; };
 		EA4D08BD2475EB3000EC30A9 /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08BC2475EB3000EC30A9 /* UsersNetworking.swift */; };
 		EA4D08BF2475EDDC00EC30A9 /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08BE2475EDDC00EC30A9 /* UsersAPI.swift */; };
-		EA4D08C12475EE5800EC30A9 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08C02475EE5800EC30A9 /* UsersResponse.swift */; };
 		EA4D08C42475EE8600EC30A9 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D08C32475EE8600EC30A9 /* UserModel.swift */; };
 		EA86E91424317092000D78A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86E91324317092000D78A5 /* AppDelegate.swift */; };
 		EA86E91624317092000D78A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA86E91524317092000D78A5 /* SceneDelegate.swift */; };
@@ -27,11 +27,11 @@
 		3369892EA550C31B5110F746 /* Pods-NetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
 		595FDA0E580778729D1E0E51 /* Pods-NetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayer.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayer/Pods-NetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		866BF3BC846969D80939B1E4 /* Pods_NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA39513F24A9BCD1008AC044 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		EA4D08B72475E63E00EC30A9 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		EA4D08B92475E77000EC30A9 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		EA4D08BC2475EB3000EC30A9 /* UsersNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworking.swift; sourceTree = "<group>"; };
 		EA4D08BE2475EDDC00EC30A9 /* UsersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
-		EA4D08C02475EE5800EC30A9 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 		EA4D08C32475EE8600EC30A9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		EA86E91024317092000D78A5 /* NetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA86E91324317092000D78A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +78,7 @@
 			children = (
 				EA4D08B72475E63E00EC30A9 /* TargetType.swift */,
 				EA4D08B92475E77000EC30A9 /* BaseAPI.swift */,
+				EA39513F24A9BCD1008AC044 /* BaseResponse.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -87,7 +88,6 @@
 			children = (
 				EA4D08BC2475EB3000EC30A9 /* UsersNetworking.swift */,
 				EA4D08BE2475EDDC00EC30A9 /* UsersAPI.swift */,
-				EA4D08C02475EE5800EC30A9 /* UsersResponse.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				EA4D08BD2475EB3000EC30A9 /* UsersNetworking.swift in Sources */,
 				EA4D08BF2475EDDC00EC30A9 /* UsersAPI.swift in Sources */,
 				EA4D08C42475EE8600EC30A9 /* UserModel.swift in Sources */,
-				EA4D08C12475EE5800EC30A9 /* UsersResponse.swift in Sources */,
+				EA39514024A9BCD1008AC044 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

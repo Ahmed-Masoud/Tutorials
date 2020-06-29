@@ -9,11 +9,11 @@
 import Foundation
 
 class UserModel: Codable {
-    var firstName: String?
-    var lastName: String?
+    var name: String?
+    var salary: String?
     
     enum CodingKeys: String, CodingKey {
-        case firstName = "first_name"
-        case lastName = "last_name"
+        case name = "employee_name"
+        case salary = "employee_salary"
     }
 }

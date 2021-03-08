@@ -15,8 +15,7 @@
 		EA30011324369AD0004CB4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA30011124369AD0004CB4EA /* LaunchScreen.storyboard */; };
 		EA30011D24369AF8004CB4EA /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA30011C24369AF8004CB4EA /* ToastView.xib */; };
 		EA30011F24369B0E004CB4EA /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30011E24369B0E004CB4EA /* ToastView.swift */; };
-		EA4D39F824369D11002F9E7B /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D39F724369D11002F9E7B /* ToastManager.swift */; };
-		EA4D39FA24369D67002F9E7B /* KeyboardStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D39F924369D67002F9E7B /* KeyboardStateManager.swift */; };
+		EA4D39F824369D11002F9E7B /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D39F724369D11002F9E7B /* Banner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,7 @@
 		EA30011424369AD0004CB4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA30011C24369AF8004CB4EA /* ToastView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
 		EA30011E24369B0E004CB4EA /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		EA4D39F724369D11002F9E7B /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
-		EA4D39F924369D67002F9E7B /* KeyboardStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateManager.swift; sourceTree = "<group>"; };
+		EA4D39F724369D11002F9E7B /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E3B4D0125F68CF2003D1313 /* Notification Banner */ = {
+			isa = PBXGroup;
+			children = (
+				EA30012024369B18004CB4EA /* ToastView */,
+				EA30011A24369ADE004CB4EA /* Banner */,
+			);
+			path = "Notification Banner";
+			sourceTree = "<group>";
+		};
 		EA3000FA24369ACE004CB4EA = {
 			isa = PBXGroup;
 			children = (
@@ -64,8 +71,8 @@
 		EA30010524369ACE004CB4EA /* ToastManager */ = {
 			isa = PBXGroup;
 			children = (
+				6E3B4D0125F68CF2003D1313 /* Notification Banner */,
 				EA30011B24369AEA004CB4EA /* Views */,
-				EA30011A24369ADE004CB4EA /* Managers */,
 				EA30010624369ACE004CB4EA /* AppDelegate.swift */,
 				EA30010824369ACE004CB4EA /* SceneDelegate.swift */,
 				EA30010C24369ACE004CB4EA /* Main.storyboard */,
@@ -76,20 +83,18 @@
 			path = ToastManager;
 			sourceTree = "<group>";
 		};
-		EA30011A24369ADE004CB4EA /* Managers */ = {
+		EA30011A24369ADE004CB4EA /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				EA4D39F724369D11002F9E7B /* ToastManager.swift */,
-				EA4D39F924369D67002F9E7B /* KeyboardStateManager.swift */,
+				EA4D39F724369D11002F9E7B /* Banner.swift */,
 			);
-			path = Managers;
+			path = Banner;
 			sourceTree = "<group>";
 		};
 		EA30011B24369AEA004CB4EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				EA30010A24369ACE004CB4EA /* ViewController.swift */,
-				EA30012024369B18004CB4EA /* ToastView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,9 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4D39F824369D11002F9E7B /* ToastManager.swift in Sources */,
+				EA4D39F824369D11002F9E7B /* Banner.swift in Sources */,
 				EA30011F24369B0E004CB4EA /* ToastView.swift in Sources */,
-				EA4D39FA24369D67002F9E7B /* KeyboardStateManager.swift in Sources */,
 				EA30010B24369ACE004CB4EA /* ViewController.swift in Sources */,
 				EA30010724369ACE004CB4EA /* AppDelegate.swift in Sources */,
 				EA30010924369ACE004CB4EA /* SceneDelegate.swift in Sources */,
@@ -325,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CSKQ286Y3;
+				DEVELOPMENT_TEAM = UNQSKV38B2;
 				INFOPLIST_FILE = ToastManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6CSKQ286Y3;
+				DEVELOPMENT_TEAM = UNQSKV38B2;
 				INFOPLIST_FILE = ToastManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

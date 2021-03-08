@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func showToast(_ sender: Any) {
-        ToastManager.shared.showError(message: "Hello", view: self.view)
+        Banner.showMessage(message: textField.text ?? "" , view: self.view, bannerStyle: .default )
     }
     
 }

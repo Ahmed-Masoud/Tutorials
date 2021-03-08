@@ -22,8 +22,9 @@ class ToastView: UIView {
         let estimatedTextHeight = textString.boundingRect(with: CGSize(width: 320, height: 2000), options: .usesLineFragmentOrigin, attributes: textAttributes, context: nil).height
         let height = estimatedTextHeight + 30
         return height
-        
+    
     }
+    
     //MARK: Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
